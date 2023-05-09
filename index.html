@@ -57,7 +57,13 @@
 
         $(document).ready(function() {
             let date = new Date(2023, 12, 3);
-            let currentDate = new Date();
+            let curr = new Date();
+
+            let curr_year = curr.getFullYear();
+            let curr_month = curr.getMonth() + 1;
+            let curr_day = curr.getDate();
+
+            let currentDate = new Date(curr_year, curr_month, curr_day)
 
             let result = date - currentDate;
             let misec = 24 * 60 * 60 * 1000;
