@@ -437,18 +437,20 @@
                 var marker = new kakao.maps.Marker({
                     map: map,
                     position: markerPosition,
-                    text: 'AT포레 웨딩홀'
                 });
+
+                marker.setMap(map);
+
 
                 // 인포윈도우로 장소에 대한 설명을 표시합니다
                 // var infowindow = new kakao.maps.InfoWindow({
                 //     content: '<div style="width:150px;text-align:center;padding:6px 0;">at포레웨딩홀</div>'
                 // });
                 // infowindow.open(map, marker);
-                var infowindow = new kakao.maps.InfoWindow({zIndex:1});
+                // var infowindow = new kakao.maps.InfoWindow({zIndex:1});
                 // var content = '<div style="padding:5px;z-index:1;">at포레웨딩홀</div>';
                 // infowindow.setContent(content);
-                infowindow.open(map, marker);
+                // infowindow.open(map, marker);
 
                 // 마커가 지도 위에 표시되도록 설정합니다
                 // marker.setMap(map);
