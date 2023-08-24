@@ -148,8 +148,9 @@ body {
 
 .cover-heading {
   margin-top: 7.5rem;
-  color: #fefefe;
+  color: #000000;
   font-family: NanumMyeongjo-b;
+  font-weight: 900;
 }
 
 .top-div {
